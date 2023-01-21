@@ -1,0 +1,35 @@
+h1{
+    margin: 20px;
+    size: 5px;
+}
+.PhotoArray{
+    display: grid;
+    grid-template-areas: 
+     "photoOne photoTwo photoThree"
+     "photoOne photoFour photoFive";
+}
+.PhotoArray > div{
+    border: 10px solid white;
+    padding: 10px;
+}
+.PhotoArray > div:first-child{
+    grid-area: photoOne;
+}
+.SecondArray{
+    display: flex;
+    border: 10px solid white;
+    padding: 10px;
+    margin: 5px;
+}
+#item1{
+    position: relative;
+    z-index: 0;
+}
+#item2{
+    position: absolute;
+    top: 880px;
+    left: 1320px;
+    z-index: 1;
+    font-weight: 500;
+    font-size: medium;
+}
